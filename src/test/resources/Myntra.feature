@@ -50,3 +50,9 @@ Scenario: To Verify, List of All Ethnic wears of men with their brand name shoul
 
 Given user clicks on the Ethnic wear section on homepage
 Then all Ethnic wear cloths should be displayed with prices 
+
+@MyntraBeautyProduct
+Scenario: To verify, List of All Men Beauty Products with their prices
+
+Given user searches men beauty product in the searchBox
+Then all men beauty product should be displayed with their prices

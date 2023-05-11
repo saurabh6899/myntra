@@ -160,6 +160,20 @@ public class Browse extends Homepage {
 		hp.getAllTheEthnicWearProducts();
 
 	}
+	
+	@Given("user searches men beauty product in the searchBox")
+	public void menBeautyProducts() {
+		hp = new Homepage();
+		hp.searchMenBeautyProduct("men beatuy products");
+
+	}
+	
+	@Then("all men beauty product should be displayed with their prices")
+	public void listOfMenBeautyProduct() {
+		hp = new Homepage();
+		hp.getListOfAllMensBeautyProducts();
+
+	}
   
 	
 }

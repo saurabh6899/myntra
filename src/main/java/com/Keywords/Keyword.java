@@ -24,7 +24,7 @@ public class Keyword {
 	public static void launchBrowser(String browserName) {
 		if (browserName.equalsIgnoreCase("chrome")) {
 			ChromeOptions chromeOptions = new ChromeOptions();
-			chromeOptions.addArguments("--remote-allow-origins=*");
+		//	chromeOptions.addArguments("--remote-allow-origins=*");
 			chromeOptions.addArguments("--disable-Notifications");
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(chromeOptions);

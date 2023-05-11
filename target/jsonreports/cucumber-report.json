@@ -1,0 +1,76 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-05-11T10:03:10.114Z",
+        "before": [
+          {
+            "result": {
+              "duration": 17508927100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.Stepdefinations.Testbase.setUp()"
+            }
+          }
+        ],
+        "line": 55,
+        "name": "To verify, List of All Men Beauty Products with their prices",
+        "description": "",
+        "id": "this-file-contains-the-scenario-with-respect-to-myntra-website;to-verify--list-of-all-men-beauty-products-with-their-prices",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8210734400,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "user searches men beauty product in the searchBox",
+            "match": {
+              "location": "com.Stepdefinations.Browse.menBeautyProducts()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2077559200,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "all men beauty product should be displayed with their prices",
+            "match": {
+              "location": "com.Stepdefinations.Browse.listOfMenBeautyProduct()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@HomePage"
+          },
+          {
+            "name": "@MyntraBeautyProduct"
+          }
+        ]
+      }
+    ],
+    "name": "This file contains the Scenario with respect to Myntra WebSite",
+    "description": "",
+    "id": "this-file-contains-the-scenario-with-respect-to-myntra-website",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Myntra.feature",
+    "tags": [
+      {
+        "name": "@HomePage",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

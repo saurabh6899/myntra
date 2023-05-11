@@ -98,7 +98,13 @@ public class Homepage {
 	@FindBy(xpath = "//div[@class=\"product-price\"]")
 	private List<WebElement> pricesEthnicWear;
 	
+	@FindBy(xpath = "//h3[@class=\"product-brand\"]")
+	private List<WebElement> mensBeautyProduct;
 	
+	@FindBy(xpath ="//div[@class=\"product-price\"]")
+	private List<WebElement> pricesOfMensBeautyProducts;
+	
+
 	
 
 	/** ================================Methods============================== **/
@@ -258,5 +264,21 @@ public class Homepage {
 		keyword.iterateAndPrint(productName, prices);
 
 	}
+	
+	public void searchMenBeautyProduct(String string) {
+      searchBox.click();
+      searchBox.sendKeys(string);
+      searchBox.sendKeys(Keys.ENTER);
+      
+	}
+	
+	public void getListOfAllMensBeautyProducts() {
+     keyword = new Keyword();
+     List<String> productName = keyword.getListOfElements(mensBeautyProduct);
+     List<String> prices = keyword.getListOfElements(pricesOfMensBeautyProducts);
+     keyword.iterateAndPrint(productName, prices);
+	}
+	
+	
 	
 }
